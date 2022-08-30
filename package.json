@@ -1,0 +1,24 @@
+{
+  "name": "solid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://VoTuan232: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@github.com/VoTuan232/solid.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VoTuan232/solid/issues"
+  },
+  "homepage": "https://github.com/VoTuan232/solid#readme",
+  "devDependencies": {
+    "@types/node": "^18.7.14",
+    "tslib": "^2.4.0"
+  }
+}
