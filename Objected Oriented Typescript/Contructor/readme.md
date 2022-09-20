@@ -1,0 +1,4 @@
+- contructor
+- static
+- paramter 
+- readonly properties 
