@@ -42,7 +42,7 @@ class MuteQuack implements QuackBehavior {
     }
 }
 
-abstract class Duck {
+abstract class Duck2 {
     flyBehavior: FlyBehavior;
     quackBehavior: QuackBehavior;
 
@@ -74,7 +74,7 @@ abstract class Duck {
     }
 }
 
-class MallardDuck extends Duck {
+class MallardDuck2 extends Duck2 {
     // constructor() {
     //     super(new MuteQuack(), new FlyNoWay()) // program implementation here ?? ==> pattern continue 
     // }
@@ -86,11 +86,11 @@ class MallardDuck extends Duck {
     }
 
     display() {
-        console.log('MallardDuck is diplaying')
+        console.log('MallardDuck2 is diplaying')
     }
 }
 
-class ModelDuck extends Duck {
+class ModelDuck2 extends Duck2 {
     constructor() {
         super()
         this.setFlyBehavior(new FlyNoWay())
@@ -98,11 +98,11 @@ class ModelDuck extends Duck {
     }
 
     display() {
-        console.log('ModelDuck is diplaying')
+        console.log('ModelDuck2 is diplaying')
     }
 }
 
-const duck: Duck = new MallardDuck() 
+const duck: Duck2 = new MallardDuck2() 
 // duck.setFlyBehavior(new FlyNoWay())
 // duck.setQuackBehavior(new MuteQuack())
 duck.display()
@@ -110,7 +110,7 @@ duck.performQuack()
 duck.performFly()
 console.log('----------------------')
 
-const duck2: Duck = new ModelDuck()
+const duck2: Duck2 = new ModelDuck2()
 duck2.display()
 duck2.performQuack()
 duck2.performFly()
