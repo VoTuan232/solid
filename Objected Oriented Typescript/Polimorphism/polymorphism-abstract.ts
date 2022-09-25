@@ -1,4 +1,4 @@
-abstract class Hero {
+abstract class Hero2 {
     hunger: number
     health: number
 
@@ -13,14 +13,14 @@ abstract class Hero {
     }
 }
 
-class Archer extends Hero {
+class Archer2 extends Hero2 {
     arrow: number 
     attack() {
         console.log("Firing an arrow")
         this.arrow -= 1
     }
 }
-abstract class Mage extends Hero {
+abstract class Mage extends Hero2 {
     mana: number
     
 }
@@ -32,21 +32,21 @@ class Wizard extends Mage {
     }
 }
 
-class Knight extends Hero {
+class Knight extends Hero2 {
     shield: number 
     attack() {
         console.log("Knight attack")
     }
 }
 
-const archer: Hero = new Archer()
+const archer: Hero2 = new Archer2()
 // archer.move()
-const knight: Hero = new Knight()
+const knight: Hero2 = new Knight()
 
-const heros: Hero[] = [knight, archer]
+const heros: Hero2[] = [knight, archer]
 
 for (let hero of heros) {
     hero.attack()
 }
 
-// const bob: Hero = new Hero() // Cannot create an instance of an abstract class.
+// const bob: Hero2 = new Hero2() // Cannot create an instance of an abstract class.
