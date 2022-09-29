@@ -1,3 +1,6 @@
+# File Docs
+https://docs.google.com/document/d/15TYSIXCTdxWqN40DBlc13YoYj1K5LZh8Lvi4zyv4928/edit#
+
 # 1.Nguyên lí thiết kế 
 `Identify the aspects of your application that vary and seperate them from what stays the same`
 - Xác định các khía cạnh ứng dụng 

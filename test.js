@@ -1,19 +1,10 @@
-
-
-function* generateId() {
-    let id = 1;
-    while(true) {
-        const inc = yield id
-        if (inc !== null) {
-            id += inc;
-        } else {
-            id += 1;
-        }
-    }
-}
-
-const a = generateId();
-console.log(a.next())
-console.log(a.next(5))
-console.log(a.next(3))
-console.log(a.next())
+function * generatorFunction() { // Line 1
+    console.log('This will be executed first.');
+    yield 'Hello, ';   // Line 2
+    console.log('I will be printed after the pause');  
+    yield 'World!';
+  }
+  const generatorObject = generatorFunction(); // Line 3
+  console.log(generatorObject.next().value);
+  console.log(generatorObject.next().value); 
+  console.log(generatorObject.next().value); 
