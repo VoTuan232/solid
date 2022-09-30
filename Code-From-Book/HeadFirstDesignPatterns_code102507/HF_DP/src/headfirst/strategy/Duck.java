@@ -18,7 +18,7 @@ public abstract class Duck {
 	abstract void display();
  
 	public void performFly() {
-		flyBehavior.fly();
+		yWithuack.fly();
 	}
  
 	public void performQuack() {
