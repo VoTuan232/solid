@@ -9,9 +9,11 @@ class Main {
 
 		let pizza = store.orderPizza("cheese");
 		console.log("We ordered a " + pizza.getName() + "\n");
+		console.log(pizza.print())
  
 		pizza = store.orderPizza("clam");
 		console.log("We ordered a " + pizza.getName() + "\n");
+		console.log(pizza.print())
 	}
 }
 

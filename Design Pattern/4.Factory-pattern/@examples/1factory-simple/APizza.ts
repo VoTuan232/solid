@@ -27,11 +27,11 @@ export abstract class OneAPizza {
 	public print() {
 		// code to display pizza name and ingredients
 		let display = '';
-		display.concat("---- " + this.name + " ----\n");
-		display.concat(this.dough + "\n");
-		display.concat(this.sauce + "\n");
+		display = display.toString().concat("---- " + this.name + " ----\n");
+		display = display.concat(this.dough + "\n");
+		display = display.concat(this.sauce + "\n");
 		for (let i = 0; i < this.toppings.length; i++) {
-			display.concat(this.toppings[i] + "\n");
+			display = display.concat(this.toppings[i] + "\n");
 		}
 		return display.toString();
 	}
